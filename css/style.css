@@ -1,3 +1,15 @@
-/*base styles*/
+/*Mobile and Base Styles*/
 
- 
+.header {
+  display:flex;
+}
+
+.header {
+  flex-direction: column;
+}
+
+/*logo styling*/
+
+.logo {
+  
+}
