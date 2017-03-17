@@ -56,10 +56,6 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
   margin: 0;
 }
 
-.main-nav {
-  margin-top: 5px;
-}
-
 .name a,
 .main-nav a {
   text-align: center;
@@ -67,9 +63,21 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
   padding: 10px 15px;
 }
 
+.name {
+  color: #26835b; 
+  background-color: #94c4a2 
+}
+/* why isnt' the font changing colors?*/
+
+
 .main-nav a {
   font-size: .95em;
   color: #26835b;
+  background-color: #94c4a2;
+}
+
+.main-nav li {
+  border: 1px solid #26835b;
 }
 
 /*****************************
@@ -83,6 +91,11 @@ Media Queries (based on flexbox video "best city" page)
      margin: 0 auto;
   }
 }
+
+.main-nav {
+  display: flex;
+}
+
 
 @media (min-width: 1025px) {
   .main-header {
