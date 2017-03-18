@@ -63,15 +63,16 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
   padding: 10px 15px;
 }
 
-.name {
-  color: #26835b; 
+.header-container {
   background-color: #94c4a2 
 }
-/* why isnt' the font changing colors?*/
 
+.name a {
+  color: #26835b;
+}
 
 .main-nav a {
-  font-size: .95em;
+  font-size: .98em;
   color: #26835b;
   background-color: #94c4a2;
 }
@@ -80,27 +81,50 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
   border: 1px solid #26835b;
 }
 
+.main-nav a:hover {
+  background-color: #26835b;
+  color: #94c4a2;
+  border-radius: 5%;
+}
+
 /*****************************
 Media Queries (based on flexbox video "best city" page)
 ******************************/
 
 @media (min-width: 769px) {
-  .main-header,
-  .name {
+  .main-header {
      width: 90%;
      margin: 0 auto;
   }
-}
+  .main-header, 
+  .main-nav{
+    display: flex;
+  }
+  
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.header-container {
-  display: flex;
-  flex-direction: row;
-}
-
+  .main-nav li {
+    border: none;
+  }
+  
+}/*end @media 769px*/
 
 @media (min-width: 1025px) {
   .main-header {
     width: 80%;
     max-width: 1150px;
   }
-}
+  
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .main-nav li {
+    border: none;
+  }
+  
+} /*end @media 1025px*/
