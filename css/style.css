@@ -85,8 +85,8 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
 .main-nav a:hover {
   background-color: #26835b;
   color: #94c4a2;
-  border-radius: 5%;
 }
+
 /*End Navigation Bar*/
 
 /*Footer*/
@@ -154,7 +154,12 @@ Media Queries (based on flexbox video "best city" page)
   .main-footer {
     flex-direction: row;
     justify-content: space-between
+      
+  .main-nav a:hover {
+    border-radius: 5%;
   }
+    /*why wont the border change just in the media queries?*/
+    
 }/*end @media 769px*/
 
 @media (min-width: 1025px) {
@@ -173,7 +178,10 @@ Media Queries (based on flexbox video "best city" page)
   }
   
     .main-footer {
-    flex-direction: row;
-    justify-content: space-between
+      flex-direction: row;
+      justify-content: space-between
+      
+    .main-nav a:hover {
+      border-radius: 5%;
   }
 } /*end @media 1025px*/
