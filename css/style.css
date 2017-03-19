@@ -98,7 +98,7 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
 }
 
 .main-footer a,
-.main-footer span {
+.copyright {
   font-size: .80em;
   color: #26835b;
   background-color: #94c4a2;
@@ -107,14 +107,29 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
 .main-footer, 
 .main-footer ul {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+}
+
+.main-footer {
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  
+}
+
+.main-footer ul {
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .icon,
-.main-footer span {
-  padding: 0 15px;
+.copyright{
+  padding: 0 0 0 15px;
+}
+
+.icon-label {
+  vertical-align: top;
+  padding: 0 0 0 10px;
+  font-size: .95em;
 }
 
 /*sticky footer*/
