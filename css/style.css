@@ -31,6 +31,7 @@ h2,
 h3,
 a {
   color: #000;
+  text-align: center;
 }
 
 h2,
@@ -131,6 +132,7 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
   padding: 0 0 0 10px;
   font-size: .95em;
 }
+/*end footer*/
 
 /*sticky footer*/
 body {
@@ -142,6 +144,30 @@ body {
 .container {
   flex: 1;
 }
+/*end sticky footer*/
+
+/*student page youtube videos*/
+
+.youtube-videos {
+  display: block;
+  text-align: center;
+}
+
+.youtube-videos img {
+  width: 70%;
+  margin: 15px 0 0 0; 
+}
+
+.caption {
+  margin-top: -5px;
+}
+
+
+
+
+
+
+/*end student page youtube videos*/
 
 /*****************************
 Media Queries (based on flexbox video "best city" page)
@@ -169,12 +195,26 @@ Media Queries (based on flexbox video "best city" page)
   .main-footer {
     flex-direction: row;
     justify-content: space-between
-      
+  }
   .main-nav a:hover {
     border-radius: 5%;
   }
-    /*why wont the border change just in the media queries?*/
-    
+  
+  .youtube-videos img {
+    width: 40%;
+  }
+  
+  .youtube-videos li {
+    display: block;
+    float: left;
+  }
+  
+  .youtube-videos {
+    display: block;
+    max-width: 750px;
+  }
+  
+  
 }/*end @media 769px*/
 
 @media (min-width: 1025px) {
@@ -195,7 +235,8 @@ Media Queries (based on flexbox video "best city" page)
     .main-footer {
       flex-direction: row;
       justify-content: space-between
-      
+  }
+  
     .main-nav a:hover {
       border-radius: 5%;
   }
