@@ -151,6 +151,7 @@ body {
 .youtube-videos {
   display: block;
   text-align: center;
+  
 }
 
 .youtube-videos img {
@@ -200,23 +201,32 @@ Media Queries (based on flexbox video "best city" page)
     border-radius: 5%;
   }
   
+/*
   .youtube-videos img {
     width: 40%;
   }
+*/
   
+/*
   .youtube-videos li {
     display: block;
     float: left;
   }
+*/
   
   .youtube-videos {
-    display: block;
-    max-width: 750px;
+    margin: o.25em auto;
+    vertical-align: top;
+    display: inline-block;
+    width: 40%;
+    float: left;
   }
   
   
 }/*end @media 769px*/
 
+
+/*begin @media 1025px*/
 @media (min-width: 1025px) {
   .main-header {
     width: 80%;
