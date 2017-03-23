@@ -163,12 +163,24 @@ body {
   margin-top: -5px;
 }
 
-
-
-
-
-
 /*end student page youtube videos*/
+body form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto; 
+}
+
+/*Contact Form*/
+
+
+
+
+
+
+
+/*End Contact Form*/
+
 
 /*****************************
 Media Queries (based on flexbox video "best city" page)

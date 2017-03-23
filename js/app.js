@@ -60,7 +60,7 @@
 
 
 //1. hide spans/prompts: #empty and #no-match
-$("#empty, #no-match").hide();
+$("#empty #no-match").hide();
 
 //2. show span #empty on hover in email input
 $("#confirm-email").hover(
