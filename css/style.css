@@ -180,7 +180,8 @@ Media Queries (based on flexbox video "best city" page)
      margin: 0 auto;
   }
   .main-header, 
-  .main-nav{
+  .main-nav, 
+  .youtube-videos {
     display: flex;
   }
   
@@ -201,28 +202,10 @@ Media Queries (based on flexbox video "best city" page)
     border-radius: 5%;
   }
   
-/*
-  .youtube-videos img {
-    width: 40%;
+  .youtube-container {
+    margin: 0 auto;
   }
-*/
-  
-/*
-  .youtube-videos li {
-    display: block;
-    float: left;
-  }
-*/
-  
-  .youtube-videos {
-    margin: o.25em auto;
-    vertical-align: top;
-    display: inline-block;
-    width: 40%;
-    float: left;
-  }
-  
-  
+    
 }/*end @media 769px*/
 
 
