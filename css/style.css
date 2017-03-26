@@ -24,7 +24,7 @@ ul {
 
 p {
   font-size: .95em;
-  margin-bottom: 1.8em;
+  margin: .5em 2em;
 }
 
 h2,
@@ -36,7 +36,7 @@ a {
 
 h2,
 h3 {
-  margin-top: 0;
+  margin-top: 0.5em;
 }
 
 a {
@@ -50,6 +50,17 @@ img {
 /*****************************
 Mobiel and Base Styles (based on flexbox video "best city" page)
 ******************************/
+.intro-photo {
+  display: block;
+  margin: auto;
+  width: 60%;
+  padding: 20px 0;
+  border-radius: 5%;
+}
+
+.bold {
+  font-weight: bold;
+}
 
 /*Navigation Bar*/
 
@@ -94,7 +105,6 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
 .main-footer {
   background-color: #94c4a2;
   text-align: center;
-  display: block;
   padding: 10px 15px;
 }
 
@@ -141,7 +151,7 @@ body {
   min-height: 100vh;
 }
 
-.container {
+.row {
   flex: 1;
 }
 /*end sticky footer*/
@@ -175,7 +185,7 @@ body form {
 form {
   background: #94c4a2;
   padding: 4em 4em 2em;
-  margin: 100px auto 0;
+  margin: 10% auto 0;
   width: 100%;
 }
 
@@ -197,7 +207,6 @@ input[type="text"],
   border: 1px solid #26835b;
   font-size: 1.6em;
   border-radius: 5px;
-
 }
 
 #message {
@@ -242,7 +251,8 @@ Media Queries (based on flexbox video "best city" page)
   }
   .main-header, 
   .main-nav, 
-  .youtube-videos {
+  .youtube-videos,
+  .row {
     display: flex;
   }
   
@@ -259,6 +269,7 @@ Media Queries (based on flexbox video "best city" page)
     flex-direction: row;
     justify-content: space-between
   }
+  
   .main-nav a:hover {
     border-radius: 5%;
   }
@@ -267,8 +278,14 @@ Media Queries (based on flexbox video "best city" page)
     margin: 0 auto;
   }
   
+  .row {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .primary {
+    max-width: 40%;
+  }
   form {
-
     max-width: 600px;
     box-shadow: 0 0 1em #111;
     border-radius: 5px;
