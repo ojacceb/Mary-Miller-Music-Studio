@@ -161,7 +161,6 @@ body {
 .youtube-videos {
   display: block;
   text-align: center;
-  
 }
 
 .youtube-videos img {
@@ -232,17 +231,21 @@ input[type="submit"] {
   padding: .8em 0;
   text-shadow: 0 1px #174f37;
 }
-
-
 /*End Contact Form*/
 
+/*Student Calendar*/
+.row {
+  display: flex;
+}
+
+iframe {
+  margin: auto;
+}
+/*End Student Calendar*/
 
 /*****************************
 Media Queries (based on flexbox video "best city" page)
 ******************************/
-@media (max-width: 374px) {
-/*  footer info doesn't display correctly below approx. 374px ie. iphone 5 galaxy s5*/
-}
 
 @media (min-width: 769px) {
   .main-header {
@@ -282,9 +285,11 @@ Media Queries (based on flexbox video "best city" page)
     flex-direction: row;
     justify-content: center;
   }
+  
   .primary {
     max-width: 40%;
   }
+  
   form {
     max-width: 600px;
     box-shadow: 0 0 1em #111;
