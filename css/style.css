@@ -104,7 +104,7 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
 /*Footer*/
 .main-footer {
   background-color: #94c4a2;
-  text-align: center;
+  text-align: left;
   padding: 10px 15px;
 }
 
@@ -113,12 +113,6 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
   font-size: .80em;
   color: #26835b;
   background-color: #94c4a2;
-}
-
-.main-footer, 
-.main-footer ul {
-  display: flex;
-  align-items: flex-end;
 }
 
 .main-footer {
@@ -296,6 +290,13 @@ Media Queries (based on flexbox video "best city" page)
     box-shadow: 0 0 1em #111;
     border-radius: 5px;
   }
+  
+  .main-footer, 
+  .footer-links {
+    display: flex;
+    align-items: flex-end;
+  }
+  
 }/*end @media 769px*/
 
 
