@@ -234,7 +234,8 @@ input[type="submit"] {
 /*End Contact Form*/
 
 /*Student Calendar*/
-.row {
+
+.calendar-row {
   display: flex;
 }
 
