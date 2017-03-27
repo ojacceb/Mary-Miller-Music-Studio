@@ -50,17 +50,7 @@ img {
 /*****************************
 Mobiel and Base Styles (based on flexbox video "best city" page)
 ******************************/
-.intro-photo {
-  display: block;
-  margin: auto;
-  width: 60%;
-  padding: 20px 0;
-  border-radius: 5%;
-}
 
-.bold {
-  font-weight: bold;
-}
 
 /*Navigation Bar*/
 
@@ -77,7 +67,7 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
 }
 
 .header-container {
-  background-color: #94c4a2; 
+  background-color: #72c6a2; 
 }
 
 .name a {
@@ -87,7 +77,7 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
 .main-nav a {
   font-size: .98em;
   color: #26835b;
-  background-color: #94c4a2;
+  background-color: #72c6a2;
 }
 
 .main-nav li {
@@ -96,14 +86,24 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
 
 .main-nav a:hover {
   background-color: #26835b;
-  color: #94c4a2;
+  color: #72c6a2;
 }
 
 /*End Navigation Bar*/
 
+/*Banner*/
+.logo {
+  display: block;
+  box-sizing: border-box;
+  margin: auto;
+  width: 60%;
+  border: none;
+}
+/*End Banner*/
+
 /*Footer*/
 .main-footer {
-  background-color: #94c4a2;
+  background-color: #72c6a2;
   text-align: left;
   padding: 10px 15px;
 }
@@ -112,7 +112,7 @@ Mobiel and Base Styles (based on flexbox video "best city" page)
 .copyright {
   font-size: .80em;
   color: #26835b;
-  background-color: #94c4a2;
+  background-color: #72c6a2;
 }
 
 .main-footer {
@@ -150,6 +150,21 @@ body {
 }
 /*end sticky footer*/
 
+/*Index Page*/
+.intro-photo {
+  display: block;
+  margin: auto;
+  width: 60%;
+  padding: 20px 0;
+  border-radius: 5%;
+}
+
+.bold {
+  font-weight: bold;
+}
+/*End Index Page*/
+
+
 /*student page youtube videos*/
 
 .youtube-videos {
@@ -176,7 +191,7 @@ body form {
 
 /*contact Form (styles borrowed from JQuery Basics*/
 form {
-  background: #94c4a2;
+  background: #72c6a2;
   padding: 4em 4em 2em;
   margin: 10% auto 0;
   width: 100%;
@@ -259,6 +274,17 @@ Media Queries (based on flexbox video "best city" page)
     align-items: center;
   }
 
+  .header-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    height: 150px;
+    width: auto;
+    align-self: flex-start;
+  }
+  
   .main-nav li {
     border: none;
   }
